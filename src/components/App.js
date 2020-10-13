@@ -15,6 +15,7 @@ const App = (props) => {
         messages={props.conversation.messages} 
         currentUser={props.currentUser}
       />
+      
       <Footer />
     </div>
   );

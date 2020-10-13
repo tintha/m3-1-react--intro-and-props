@@ -12,10 +12,18 @@ import ChatMessage from './ChatMessage'
 // - a background color of #e9e9eb
 
 const ChatStream = (props) => {
+  console.log(props.currentUser.username);
+  
   return (
     <section className='chat-stream'>
       {props.messages.map((message) => {
-        return <ChatMessage message={message} key={message.id} />;
+        let messageType;
+        if (message.user.username === props.currentUser.username) {
+          messageType = 'sent';
+        } else {
+          messageType = 'received';
+        }
+        return <ChatMessage message={message} key={message.id} messageType={messageType} />;
       })}
     </section>
   );

@@ -22,7 +22,19 @@
 .text-message {
   font-size: 12px;
   background-color: #e9e9eb;
+  color: #000;
   padding: 12px;
   border-radius: 12px;
   margin-top: 2px;
+}
+
+.received-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.received {
+  background-color: #1185f7;
+  color: #fff;
 }
