@@ -1,0 +1,28 @@
+.chat-message {
+  display: flex;
+  align-items: center;
+}
+
+.chat-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.text-message {
+  font-size: 12px;
+  background-color: #e9e9eb;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 2px;
+}
