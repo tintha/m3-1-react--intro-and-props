@@ -12,8 +12,6 @@ import ChatMessage from './ChatMessage'
 // - a background color of #e9e9eb
 
 const ChatStream = (props) => {
-  console.log(props.currentUser.username);
-  
   return (
     <section className='chat-stream'>
       {props.messages.map((message) => {

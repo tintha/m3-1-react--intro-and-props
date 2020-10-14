@@ -3,7 +3,6 @@ import React from 'react';
 import './ChatMessage.css';
 
 const ChatMessage = (props) => {
-    console.log(props);
     if (props.messageType === 'sent') {
         return <div className='received-container'>
         <div className='chat-text-container'>
