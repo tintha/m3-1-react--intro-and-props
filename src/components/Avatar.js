@@ -3,11 +3,10 @@ import React from 'react';
 import './Avatar.css';
 
 const Avatar = (props) => {
-    console.log(props);
-    return <div className='avatar-container'>
-        <div><img className='topAvatar' src={props.participant.avatar} alt='' /></div>
-        <div><p>{props.participant.username}</p></div>
-       </div>;
+    return <img className='bigAvatar' 
+    src={props.users.avatar}
+    alt={props.users.username}
+  />
 }
 
 export default Avatar;
