@@ -5,11 +5,12 @@ import './Header.css';
 import Participants from './Participants';
 
 const Header = (props) => {
+  const { participants, currentUser } = props;
   const medium = 200;
   
   return <header>
-    {props.participants.filter(participant => 
-    participant.username !== props.currentUser.username).map((participant, idx) => {
+    {participants.filter(participant => 
+    participant.username !== currentUser.username).map((participant, idx) => {
       return <Participants participant={participant} key={idx} />;
     })}
     </header>;

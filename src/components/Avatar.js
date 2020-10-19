@@ -3,9 +3,11 @@ import React from 'react';
 import './Avatar.css';
 
 const Avatar = (props) => {
-    return <img className='bigAvatar' 
-    src={props.users.avatar}
-    alt={props.users.username}
+  const { src, width, alt } = props;
+    return <img  
+    src={src}
+    alt={alt}
+    width={width}
   />
 }
 
